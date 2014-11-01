@@ -1,0 +1,341 @@
+.menuIcon {
+  float: right;
+  border: 1px solid #000;
+  padding: 5px 25px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .menuIcon {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .menuIcon {
+    background: url("../../assets/images/menu-icon.svg") no-repeat top center;
+    text-indent: -99999px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px !important;
+    border: none;
+    margin-top: 15px;
+  }
+}
+.menuIcon span {
+  font-weight: 600;
+}
+
+.mainMenu {
+  font-size: 13px;
+  position: relative;
+  z-index: 101;
+  clear: both;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 767px) {
+  .mainMenu {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    background: #fff;
+    border-right: 1px solid #efefef;
+  }
+}
+.mainMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .mainMenu ul {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainMenu ul {
+    background: white;
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainMenu ul {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .mainMenu ul {
+    text-align: right;
+  }
+}
+.mainMenu ul ul {
+  border: 1px solid #efefef;
+  background: white;
+  display: none;
+  font-size: 12px;
+  left: -10px;
+  position: absolute;
+  top: 32px;
+  width: 200px;
+  margin-top: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.mainMenu li {
+  display: inline-block;
+  padding: 0;
+  position: relative;
+}
+@media screen and (min-width: 1001px) {
+  .mainMenu li {
+    margin: 0 0 0 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainMenu li {
+    margin: 0 0 0 20px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .mainMenu li {
+    margin: 0 0 0 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainMenu li {
+    display: block;
+    text-align: left;
+    margin: 0;
+    border-bottom: 1px solid #efefef;
+    background: white;
+  }
+}
+.mainMenu li:first-child {
+  margin-left: 0;
+}
+@media screen and (min-width: 1025px) {
+  .mainMenu li:hover ul {
+    display: block;
+  }
+}
+.mainMenu li li {
+  display: block;
+  float: none;
+  margin: 0;
+  text-align: left;
+  width: 200px;
+  border-top: 1px solid rgba(239, 239, 239, 0.4);
+}
+.mainMenu li li a {
+  color: #333333;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  text-align: left;
+  text-transform: none;
+  width: 200px;
+}
+.mainMenu li li a:hover {
+  color: black;
+}
+.mainMenu a {
+  color: #333333;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .mainMenu a {
+    height: 44px;
+    line-height: 45px;
+    padding: 0 1em;
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainMenu a {
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+  }
+}
+.mainMenu a:hover {
+  color: black;
+  text-decoration: none;
+}
+.mainMenu .v65-pageAParent {
+  color: black;
+}
+.mainMenu .v65-home {
+  display: none;
+}
+.mainMenu .v65-selected {
+  color: black;
+  font-weight: bold;
+}
+.mainMenu .footerMenuLink {
+  bottom: 0;
+  font-size: 1.5em;
+  position: absolute;
+  right: 0;
+}
+@media screen and (max-width: 450px) {
+  .mainMenu .footerMenuLink {
+    display: block;
+  }
+}
+@media screen and (min-width: 451px) {
+  .mainMenu .footerMenuLink {
+    display: none;
+  }
+}
+
+/* ----- b. Sub Menu ----- */
+.leftSubMenu {
+  border-right: 1px solid #efefef;
+}
+.leftSubMenu h3 {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.leftSubMenu ul {
+  margin: 0;
+  padding: 0;
+}
+.leftSubMenu ul li {
+  list-style-type: none;
+  padding: 0;
+}
+.leftSubMenu ul li a {
+  padding-left: 1em;
+}
+.leftSubMenu ul li ul {
+  margin-left: 1em;
+  border-left: 1px solid #efefef;
+}
+.leftSubMenu ul li ul .v65-pageAParent {
+  background: whitesmoke;
+  color: #000;
+}
+.leftSubMenu ul li ul .v65-pageAParent:hover {
+  background: whitesmoke;
+  text-decoration: none;
+}
+.leftSubMenu ul li ul .v65-leftSelected {
+  color: black;
+  font-weight: bold;
+  border-left: 2px solid #0099cc;
+  background: whitesmoke;
+}
+.leftSubMenu ul li ul .v65-leftSelected:hover {
+  background: whitesmoke;
+  text-decoration: none;
+}
+.leftSubMenu ul li ul li a {
+  padding-left: 1em;
+  color: #000;
+}
+.leftSubMenu ul li ul li a:hover {
+  background: whitesmoke;
+  text-decoration: none;
+}
+.leftSubMenu ul a {
+  display: block;
+  width: 100%;
+  height: auto;
+  height: 3em;
+  line-height: 3em;
+  -webkit-transition: all,0.15s;
+  -moz-transition: all,0.15s;
+  transition: all,0.15s;
+}
+.leftSubMenu ul a:hover {
+  background: #F2F7FA;
+  text-decoration: none;
+}
+.leftSubMenu .v65-pageAParent {
+  background: #0099cc;
+  color: #fff;
+}
+.leftSubMenu .v65-pageAParent:hover {
+  background: #0099cc;
+  text-decoration: none;
+}
+.leftSubMenu .v65-leftSelected {
+  background: #0099cc;
+  color: #fff;
+}
+.leftSubMenu .v65-leftSelected:hover {
+  background: #0099cc;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 580px) {
+  ul.breadcrumb li {
+    display: block;
+    line-height: 3em;
+  }
+  ul.breadcrumb li:before {
+    content: none;
+  }
+}
+
+.menu-visible {
+  overflow: hidden;
+}
+
+.mobile-menu-visible {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.mainMenu {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+.animating, .menu-visible {
+  display: block;
+}
+
+.animating {
+  transition: transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+}
+
+.mainMenu.animating.leftAnimate {
+  transform: translate(-250px, 0);
+  -webkit-transform: translate(-250px, 0);
+  -moz-transform: translate(-250px, 0);
+  -ms-transform: translate(-250px, 0);
+}
+
+.mainMenu.animating.rightAnimate {
+  transform: translate(250px, 0);
+  -webkit-transform: translate(250px, 0);
+  -moz-transform: translate(250px, 0);
+  -ms-transform: translate(250px, 0);
+}
+
+.mobileFixed {
+  position: fixed;
+  overflow-y: hidden;
+}
+
+.mobileFluid {
+  position: relative;
+}
+
+.mainMenu.menu-visible {
+  left: 0 !important;
+}
