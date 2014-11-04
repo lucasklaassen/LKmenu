@@ -1,0 +1,55 @@
+.menuIcon {
+  float:right;
+}
+
+.mainMenu {
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #efefef;
+}
+
+.menu-visible {
+  overflow: hidden;
+}
+
+.noScroll {
+  position:fixed;
+  overflow: hidden;
+}
+
+.mainMenu.menu-visible {
+  left: 0 !important;
+}
+
+.mainMenu {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+.animating, .menu-visible {
+  display: block;
+}
+
+.animating {
+  transition: transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  -moz-transition: -moz-transform .25s ease-in-out;
+  -ms-transition: -ms-transform .25s ease-in-out;
+}
+
+.mainMenu.animating.leftAnimate {
+  transition: translate(-250px, 0);
+  -webkit-transform: translate(-250px, 0);
+  -moz-transform: translate(-250px, 0);
+  -ms-transform: translate(-250px, 0);
+}
+
+.mainMenu.animating.rightAnimate {
+  transform: translate(250px, 0);
+  -webkit-transform: translate(250px, 0);
+  -moz-transform: translate(250px, 0);
+  -ms-transform: translate(250px, 0);
+}
